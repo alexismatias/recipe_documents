@@ -15,13 +15,35 @@
  */
 @import "bootstrap";
 
-img.recipe-show {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center center;
+/*GLOBAL STYLES */
+html {
+    font-size: 16px;
 }
+.btn-primary {
+    background-color: #b596e0;
+    border: none;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn-primary:hover {
+    background-color: #bbb5c4;
+    color: #b596e0;
+}
+/*.btn-secondary {
+    background-color: #7343ba;
+    border: none;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn-secondary:hover {
+    background-color: #bbb5c4;
+    color: #b596e0;
+}*/
 
+
+/*INDEX VIEW STYLES */
 .recipe-card {
     background: whitesmoke;
     padding: 1rem;
@@ -32,4 +54,58 @@ img.recipe-show {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.recipe-card h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.recipe-card p {
+    text-align: center;
+    font-size: .8rem;
+}
+
+/*SHOW VIEW STYLES */
+img.recipe-show {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center center;
+}
+.show-hero {
+    height: 450px;
+    position: relative;
+}
+.show-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    background-color: rgba(115, 67, 186, .6);
+}
+.show-hero-overlay h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+.show-hero-overlay p {
+    text-align: center;
+    color: white;
+}
+
+.show-hero-overlay>div {
+    max-width: 768px;
+    margin: 0 auto;
 }

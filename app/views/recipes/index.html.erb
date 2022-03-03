@@ -1,21 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Recipes</h1>
+
 <div id="recipes" class="container">
-<div class="row">
-<div id="recipes">
+  <h1>Recipes</h1>
+<%= link_to "New Recipe", new_recipe_path, :class => "btn btn-primary" %>
+
+  <div class="row pt-5">
   <% @recipes.each do |recipe| %>
-  <div class="col-md-3">
-    <div class="recipe-card mb-4">
-  <%= image_tag recipe.image.url, class: "recipe-show" if recipe.image? %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Show this recipe", recipe %>
-    </p>
-    </div><!-- recipe-card-->
-  </div><!-- col-md-3-->
+    <div class="col-md-3">
+      <div class="recipe-card mb-4">
+         <%= image_tag recipe.image.url, class: "recipe-index" if recipe.image? %>
+
+          <%= render recipe %>
+          <p>
+            <%= link_to "View Recipe", recipe, :class => "btn btn-primary"%>
+          </p>
+      </div><!-- recipe-card-->
+      </div><!--col-md-3-->
   <% end %>
 </div><!-- row-->
 </div>
 
-<%= link_to "New recipe", new_recipe_path %>
