@@ -1,33 +1,20 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
 @import "bootstrap";
 
 /*GLOBAL STYLES */
 html {
     font-size: 16px;
 }
-.btn-primary {
-    background-color: #b596e0;
+.btn-primary{
+    background-color: #9d82c4;
     border: none;
     border-radius: 30px;
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.btn-primary:hover {
-    background-color: #bbb5c4;
+
+.btn-primary:hover{
+    background-color: lightgray;
     color: #b596e0;
 }
 /*.btn-secondary {
@@ -48,6 +35,11 @@ html {
     background: whitesmoke;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+
 }
 
 .recipe-card img {
@@ -55,18 +47,13 @@ html {
     height: 200px;
     object-fit: cover;
 }
-.recipe-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .recipe-card h2 {
     text-align: center;
     font-size: 1.25rem;
     margin-top: 1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .recipe-card p {
     text-align: center;
@@ -93,7 +80,7 @@ img.recipe-show {
     justify-content: center;
     height: inherit;
     width: 100%;
-    background-color: rgba(115, 67, 186, .6);
+    background-color: rgba(185, 169, 204, .4);
 }
 .show-hero-overlay h2 {
     text-align: center;
