@@ -3,6 +3,22 @@
 /*GLOBAL STYLES */
 html {
     font-size: 16px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+h1 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;   
+}
+h2 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+h3 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+div {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+body {
+    background-color: #cfc1de;
 }
 .btn-primary{
     background-color: #9d82c4;
@@ -10,6 +26,7 @@ html {
     border-radius: 30px;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .btn-primary:hover{
@@ -28,7 +45,12 @@ html {
     color: #b596e0;
 }*/
 
-
+/* NAVBAR STYLES */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
 /*INDEX VIEW STYLES */
 .recipe-card {
     background: whitesmoke;
@@ -51,13 +73,16 @@ html {
 .recipe-card h2 {
     text-align: center;
     font-size: 1.25rem;
+    font-weight: bold;
     margin-top: 1rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 .recipe-card p {
     text-align: center;
     font-size: .8rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 /*SHOW VIEW STYLES */
@@ -80,16 +105,18 @@ img.recipe-show {
     justify-content: center;
     height: inherit;
     width: 100%;
-    background-color: rgba(185, 169, 204, .7);
+    background-color: rgba(185, 169, 204, .4);
 }
 .show-hero-overlay h2 {
     text-align: center;
     color: white;
     font-size: 3rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 .show-hero-overlay p {
     text-align: center;
     color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
 .show-hero-overlay>div {
