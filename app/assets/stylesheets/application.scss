@@ -5,20 +5,8 @@ html {
     font-size: 16px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
-h1 {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;   
-}
-h2 {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
-h3 {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
-div {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
 body {
-    background-color: #cfc1de;
+    background-color: #f0e8fa;
 }
 .btn-primary{
     background-color: #9d82c4;
@@ -28,10 +16,9 @@ body {
     padding-right: 1rem;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
-
 .btn-primary:hover{
     background-color: lightgray;
-    color: #b596e0;
+    color: lightgray;
 }
 /*.btn-secondary {
     background-color: #7343ba;
@@ -58,9 +45,10 @@ nav.navbar {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center, !important;
     height: 100%;
     justify-content: space-between;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 
 }
 
@@ -71,11 +59,11 @@ nav.navbar {
 }
 
 .recipe-card h2 {
-    text-align: center;
+    text-align: center !important;
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: 1rem;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     letter-spacing: 1px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
